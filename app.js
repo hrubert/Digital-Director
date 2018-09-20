@@ -8,8 +8,8 @@ var express         = require('express'),
     GoogleStrategy  = require('passport-google-oauth2').Strategy,
 
    
-    GOOGLE_CLIENT_ID = "521837067682-ojjmkmgmnpquk89i899gphv2dvub3t46.apps.googleusercontent.com",
-    GOOGLE_CLIENT_SECRET = "KFfcGOvPDt1MR82t7AzKRB8_",
+    GOOGLE_CLIENT_ID = "1075155943131-i1rvg2lqiitcq4ct5keao5e1evlnnm11.apps.googleusercontent.com",
+    GOOGLE_CLIENT_SECRET = "Za3AUEGm28tzN2LkvlZGxuOR",
     SequelizeStore = require('connect-session-sequelize')(session.Store);
 
     var myStore = new SequelizeStore({ db: db.sequelize })
@@ -21,7 +21,7 @@ var express         = require('express'),
 var strategy = new GoogleStrategy({
     clientID: GOOGLE_CLIENT_ID,
     clientSecret: GOOGLE_CLIENT_SECRET,
-    callbackURL: "http://localhost:3000/auth/google/callback",
+    callbackURL: "http://www.digitaldirector.org/auth/google/callback",
     passReqToCallback: true
   },
   function (request, accessToken, refreshToken, profile, done) {
