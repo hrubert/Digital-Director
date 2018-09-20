@@ -97,15 +97,15 @@ app.get('/logout', (req, res) => {
   });
 });
 
-function ensureAuthenticated(req, res, next) {
-  if (req.isAuthenticated()) {
-    return next();
-  }
-  console.log('redirected to homepage. please log in.')
-  res.redirect('/');
-}
+// function ensureAuthenticated(req, res, next) {
+//   if (req.isAuthenticated()) {
+//     return next();
+//   }
+//   console.log('redirected to homepage. please log in.')
+//   res.redirect('/');
+// }
 
-app.use(ensureAuthenticated);
+// app.use(ensureAuthenticated);
 
 // ** Routes Section **
 app.use(require('./routes/uniforms'));
