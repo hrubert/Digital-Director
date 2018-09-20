@@ -14,6 +14,11 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "username": "project2",
+    "password": "digitalcrafts",
+    "database": "teachers",
+    "host": "teachers.cmnszmpdj4qq.us-east-2.rds.amazonaws.com",
+    "dialect": "postgres"
   }
 }
